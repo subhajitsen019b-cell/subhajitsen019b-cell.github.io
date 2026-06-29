@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>Subhajit Sen — Official Website</title>
+<script>
+  // GitHub Pages SPA fallback trick:
+  // When someone (a visitor, Googlebot, or a shared link) opens a URL like
+  // /post/123-some-title directly, GitHub Pages has no such file and serves
+  // this 404.html instead — but it still shows that URL in the address bar.
+  // We save the intended path, then redirect to the real app (index.html),
+  // which reads the saved path back and opens the correct post.
+  sessionStorage.setItem('ss_redirect_path', window.location.pathname);
+  window.location.replace('/');
+</script>
+</head>
+<body>
+  <p>Redirecting…</p>
+</body>
+</html>
